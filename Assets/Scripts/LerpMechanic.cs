@@ -18,6 +18,7 @@ public class LerpMechanic : MonoBehaviour
             instance = this;
         }
     }
+    
     void Update()
     {
         if (Input.GetMouseButton(0))
@@ -33,7 +34,7 @@ public class LerpMechanic : MonoBehaviour
 
     }
 
-   
+  
     public void Stack(GameObject other, int index)
     {
         other.transform.parent = transform;
@@ -42,7 +43,7 @@ public class LerpMechanic : MonoBehaviour
         newPos.y = -0.5f;
         other.transform.localPosition = newPos;
         cubes.Add(other);
-
+       
         
     }
 

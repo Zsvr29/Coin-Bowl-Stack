@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public float swipeSpeed;
     public float moveSpeed;
     private Camera cam;
+    public bool isMove = true;
     void Start()
     {
         cam = Camera.main;
