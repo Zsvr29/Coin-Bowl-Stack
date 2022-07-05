@@ -37,6 +37,8 @@ public class Finish : MonoBehaviour
 
 
         }
+        FindObjectOfType<Movement>().moveSpeed = 0;
+        FindObjectOfType<Movement>().swipeSpeed = 0;
 
     }
 }
