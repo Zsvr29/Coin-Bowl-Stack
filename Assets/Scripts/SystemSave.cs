@@ -9,11 +9,11 @@ public class SystemSave : MonoBehaviour
     public static SystemSave instance;
     private void Start()
     {
-      //  PlayerPrefs.DeleteAll();
-       int k= PlayerPrefs.GetInt("levelindex");
+        //PlayerPrefs.DeleteAll();
+        int k = PlayerPrefs.GetInt("levelindex");
         for (int i = 0; i < level.Length; i++)
         {
-            if (i==k)
+            if (i == k)
             {
 
                 level[i].SetActive(true);

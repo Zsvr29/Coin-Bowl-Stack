@@ -16,7 +16,7 @@ public class Finish : MonoBehaviour
             Destroy(other.gameObject); 
             LerpMechanic.instance.cubes.Remove(other.gameObject);
 
-            if (LerpMechanic.instance.cubes.Count==0)
+            if (LerpMechanic.instance.cubes.Count<1)
             {
                 Finishh();
 
@@ -26,8 +26,8 @@ public class Finish : MonoBehaviour
     }
     private void Finishh()
     {
-        text.text = ParticleGecis.instance.sayac.ToString();
-        game.transform.DOMoveY(game.transform.position.y + (ParticleGecis.instance.sayac / 40), 2f);
+        text.text = MoneyEarn.instance.counter.ToString();
+        game.transform.DOMoveY(game.transform.position.y + (MoneyEarn.instance.counter / 40), 2f);
         for (int i = 0; i < 10; i++)
         {
             if (transform.parent.name=="Level " +i )
